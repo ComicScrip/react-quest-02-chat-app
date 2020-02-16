@@ -22,12 +22,6 @@
   font-weight: 500;
 }
 
-/* Groups status indicator (red or green dot) and status text together */
-.contact .status {
-  position: relative;
-  left: -17px;
-}
-
 /* Status text */
 .contact .status .status-text {
   color: black;
