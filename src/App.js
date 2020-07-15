@@ -1,18 +1,30 @@
-import React from 'react';
-import ContactList from './components/ContactList';
-
-const contacts = [
-  {name: 'Peter Palmer', avatar: 'https://randomuser.me/api/portraits/men/85.jpg', online: false, key: 1},
-  {name: 'Bessie Long', avatar: 'https://randomuser.me/api/portraits/women/27.jpg', online: true, key: 2},
-  {name: 'Mae Alvarez', avatar: 'https://randomuser.me/api/portraits/women/68.jpg', online: false, key: 3},
-  {name: 'Noah Johnston', avatar: 'https://randomuser.me/api/portraits/men/95.jpg', online: false, key: 4},
-  {name: 'Celina Larson', avatar: 'https://randomuser.me/api/portraits/women/42.jpg', online: true, key: 5}
-]
+import React from "react";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="App">
-      <ContactList contacts={contacts} />
+    <div>
+      <div className="App">
+        <Contact
+          avatar="https://renvoiaux22.fr/WordPress3/wp-content/uploads/2018/02/1145778_3108e.jpg"
+          name="Jean-claude Duss"
+          online={true}
+        />
+      </div>
+      <div className="App">
+        <Contact
+          avatar="https://images.pausecafein.fr/images/cafein/2016/02/bronzes-repliques-cultes/christiane.jpg"
+          name="Christiane L'esthéticienne"
+          online={false}
+        />
+      </div>
+      <div className="App">
+        <Contact
+          avatar="https://renvoiaux22.fr/WordPress3/wp-content/uploads/2018/02/1145778_3108e.jpg"
+          name="Nathalie jyvaismaisjaipeur"
+          online={true}
+        />
+      </div>
     </div>
   );
 }
